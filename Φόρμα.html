@@ -2,10 +2,51 @@
 
 <html lang="el">
     <head>
-        <title></title>
+        <title>Contact us</title>
     </head>
 
     <body>
+        <main>
+            Send us your comments and questions, we are happy to help.
+        </main>
+        <div class="container">
+            <form method = 'POST' action="sending-form">
+            <fieldset>
+              <label for="txt_name">Name</label>
+              <input type="text" id="txt_name" name="name" placeholder="Your name.." required>
+              <p></p>
+
+              <label for="txt_surname">Surname</label>
+              <input type="text" id="txt_surname" name="Surname" placeholder="Your surname.." required>
+              <p></p>
+            
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."  required></textarea>
+              <p></p>
+
+              <label for="txt_email">Email</label>
+              <input type="text" id="txt_email" name="Email" placeholder="Your email.." title = 'Give a valid email, prefix@domain' 
+                                    autocomplete="email" list='user_emails' required>
+              <p></p>
+
+              <datalist id="user_emails">
+                  <option value="xyz@gmail.com"></option>
+              </datalist>
+
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="Phone" placeholder="Your phone (optional)..", pattern={0-9}>
+            </fieldset>
+             
+    >
+
+
+
+    <input type="submit" value="Submit">
+    
+
+  </form>
+</div>
 
     </body>
 </html>
