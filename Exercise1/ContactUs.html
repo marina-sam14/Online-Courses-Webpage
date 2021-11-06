@@ -28,16 +28,18 @@
             <fieldset>
                 <legend>Personal Details</legend>
 
-              <label for="txt_name">Name</label>
-              <input type="text" id="txt_name" name="name" placeholder="Your name.." required autofocus>
+              <label for="txt_name">Name</label><br>
+              <input type="text" id="txt_name" name="name" placeholder="Your name.." required autofocus><br>
               
 
-              <label for="txt_surname">Surname</label>
-              <input type="text" id="txt_surname" name="Surname" placeholder="Your surname.." required>
-              
+              <label for="txt_surname">Surname</label><br>
+              <input type="text" id="txt_surname" name="Surname" placeholder="Your surname.." required><br>
 
+              <label for="upload">Screenshot</label><br>
+              <input type="file" id="myFile" name="filename"><br>
+             
               
-            <label for="country">Country: </label>   
+            <label for="country">Country: </label> <br>  
                 <select name="country" id="country">
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -286,41 +288,42 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
              </select>
+             <br>
              
                 
 
-              <label for="txt_email">Email</label>
+              <label for="txt_email">Email</label><br>
               <input type="text" id="txt_email" name="Email" placeholder="Your email.." title = 'Give a valid email, prefix@domain' 
-                                    autocomplete="email" list='user_emails' required>
+                                    autocomplete="email" list='user_emails' required><br>
               
 
               <datalist id="user_emails">
                   <option value="xyz@gmail.com"></option>
               </datalist>
 
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="Phone" placeholder="Your phone (optional)..", pattern={0-9}>
+              <label for="phone">Phone</label><br>
+              <input type="tel" id="phone" name="Phone" placeholder="Your phone (optional)..", pattern={0-9}><br>
 
               
              
 
             </fieldset>
+            <br>
             
 
-            <label for="subject">Subject: </label>
-
+            <label for="subject">Subject: </label><br>
                 <select name="subject" id="subject">
                 <option value="comment">Comment</option>
                 <option value="question">Question</option>
                 <option value="other">Other</option>
-
-                
                 </select>
+                <br>
                 
             
             
               <textarea id="subject" name="subject" rows="10" cols="40" placeholder="Fill the silence.." required></textarea> 
               <input type="image" src="../Assets/arrow.jpg" alt="Submit" width ="50" height="50" />
+            
              
 
               
@@ -329,6 +332,36 @@
 
   </form>
 </div>
+
+<footer>
+    <p>Copyrights: Panagiotis-Marina</p>
+
+
+    <section><a href = "mailto:info@edx.org">
+        Send Feedback
+        </a>
+    </section>
+    
+
+   <section>
+       Find us online
+       <a href="https://www.facebook.com/edX">
+        <img alt="facebook" src="../Assets/facebook.jpg"
+        width=20" height="20">
+        <a href="https://twitter.com/edXOnline">
+        <img alt="twitter" src="../Assets/twitter.jpg"
+        width=20" height="20"> 
+        <a href="https://www.linkedin.com/school/edx/">
+        <img alt="linkedin" src="../Assets/linkedn.jpg"
+        width=20" height="20"> 
+        <a href="https://www.reddit.com/r/edX/">
+        <img alt="reddit" src="../Assets/reddit.jpg"
+        width=20" height="20"> 
+   </section>
+    
+            
+  
+  </footer>
 
     </body>
     
