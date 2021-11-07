@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+p {
+    font-family: "Arial", Times, serif;
+  }
+
+h1{
+    color: black;
+  }
+
+nav{
+    color: blue
+}
+
+article{
+    font-family: "Times New Roman", Times, serif;
+}
+
+img{
+    /*float:right;*/
+    max-width: 100%;
+    height: auto;
+   
+}
