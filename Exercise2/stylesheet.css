@@ -1,0 +1,32 @@
+body {
+
+    background-color: #f2f0ef;
+}
+
+header {
+    
+    background-color: rgb(7, 166, 206);
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(151, 149, 149);
+    padding-left: 2em;
+    padding-top: -1em;
+    padding-right: 2em;
+    margin-bottom: -0.5em;
+}
+
+section nav{
+    border-style: solid;
+    border-width: auto;
+    border-color: black;
+    margin-left: -5px;
+    margin-right: 105em;
+}
+
+#intro {
+    font-family: sans-serif;
+    font-size: 20pt;
+    font-style: italic;
+}
