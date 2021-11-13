@@ -5,7 +5,7 @@ body {
 
 header {
     
-    background-color: rgb(7, 166, 206);
+    background-color: rgb(176, 176, 252);
     padding: 1em;
     position: relative;
 }
@@ -19,9 +19,11 @@ a {
 }
 
 footer {
+    position: sticky;
+    width:100%; 
     background-color: rgb(151, 149, 149);
-    padding: -1em;
-    margin: 0.5em;
+    /*padding: -1em;
+    margin: 0.5em;  */
     /* padding-left: 2em;
     padding-top: -1em;
     padding-right: 2em;
@@ -29,7 +31,7 @@ footer {
 }
 
 section nav{
-    border-width: auto;
+    border-width: 0.1em;
     border-style:solid;
     border-color: black;
     margin-left: -5px;
@@ -49,18 +51,26 @@ section nav{
 }
 
 aside {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(104, 28, 28);
+    background-color: #e9cdcd70;
+    padding: 1em;
+    padding-bottom: 5em;
+    margin: 1em;
     position: absolute;
     right: 4em;
     top: 25em;
 }
 
-main img {
+/* main img {
+    background-image: url(/Assets/index.jpg);
     max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 h1 {
     font-family: myFont;
@@ -105,6 +115,16 @@ form {
     cursor: pointer;
     
   }
+
+.avatar {
+    position: absolute;
+    left: 5em;
+    top: 11em;
+}
+
+.profile_picture{
+    float: left;
+}
 
 @font-face {
     font-family: 'myFont'; /*a name to be used later*/
