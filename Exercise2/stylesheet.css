@@ -1,6 +1,7 @@
 body {
 
     background-color: #f2f0ef;
+    margin: 0;
 }
 
 header {
@@ -8,7 +9,10 @@ header {
     background-color: rgb(176, 176, 252);
     padding: 1em;
     position: relative;
+    
 }
+
+
 
 a {
     font-family: sans-serif;
@@ -19,15 +23,10 @@ a {
 }
 
 footer {
-    position: sticky;
+    position: absolute;
     width:100%; 
     background-color: rgb(151, 149, 149);
-    /*padding: -1em;
-    margin: 0.5em;  */
-    /* padding-left: 2em;
-    padding-top: -1em;
-    padding-right: 2em;
-    margin-bottom: -0.5em; */
+    
 }
 
 section nav{
@@ -36,13 +35,7 @@ section nav{
     border-color: black;
     margin-left: -5px;
     margin-right: 105em;
-   
-}
-
-/* ol {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14pt;
-} */
+   }
 
 #intro {
     font-family: sans-serif;
@@ -61,51 +54,98 @@ aside {
     position: absolute;
     right: 4em;
     top: 25em;
+    font-family: sans-serif;
+    font-size: 10pt;
 }
 
-/* main img {
+main div img {
     background-image: url(/Assets/index.jpg);
-    max-width: 100%;
-    height: auto;
+    border-radius: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-} */
+    width: 50%;
+    
+
+}
+
 
 h1 {
     font-family: myFont;
     font-size: 20pt;
 }
 
-dt {
-    font-family: sans-serif;
-    font-size: 10pt;
-    /* font-weight: bold; */
-    color: black;
-    /* left: 12px; */
-}
-
-dd {
-    border-width: auto;
-    border-style:ridge;
-    font-size: 9pt;
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    text-decoration: underline;
+    text-decoration-color: rgb(9, 183, 236);
     
-
 }
+
+dl dt img {
+    float: left;
+    padding: 15px;
+   
+}
+
+ dt {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+/* dd {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-style: italic;
+
+} */
+
+ul li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10pt;
+}
+
+
 
 dfn img {
-    /* position: absolute;
-    top: 2px;
-    left: 10px;
-    font-size: 1px; */
 
-    position: relative;
+    border-radius: 8px;
     top: 0.5em;
-}
+    float: left;
+    padding: 15px;
+} 
+
+
 
 form {
     border: 3px solid #f1f1f1;
+    font-family: sans-serif;
+    font-size: 10pt;
+
   }
+
+  textarea { 
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+  }
+
+  select {
+    padding: 6px;
+    border-style:groove;
+    border-radius: 2px;
+    background-color: #f1f1f1;
+  }
+
+  
 
   button {
     background-color:rgb(199, 34, 34);
@@ -117,14 +157,70 @@ form {
   }
 
 .avatar {
-    position: absolute;
-    left: 5em;
-    top: 11em;
+    position: static;
+    border-radius: 50%;    
 }
 
 .profile_picture{
     float: left;
+    padding: 15px;
 }
+
+
+/* selected link */
+a:active{
+    background-color: green;
+  }
+
+  /* unvisited link */
+a:link {
+    color: blue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+  }
+
+  /*hover*/
+  a:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#spec_footer {
+    position: absolute;
+    bottom: 0px;
+    height: 120px;
+    background-color: rgb(151, 149, 149);
+    width: 100%;  
+}
+
+#account {
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+}
+
+
+
+.boxes {
+    position:absolute; 
+    right: 220px; 
+    top:80px;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    
+   
+}
+
+
+/* 
+span {
+    background-color: rgb(21, 201, 126);
+} */
 
 @font-face {
     font-family: 'myFont'; /*a name to be used later*/
