@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>MOOC | Login </title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
         <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     </head>
 
@@ -15,52 +17,49 @@
             <a href="Index.html">Home</a>
             <a href="AboutUs.html">About Us</a>
             <a href="ContactUs.html">Contact Us</a>
-            <a href="Register.html">Register</a>
             <a href="Login.html">Login</a>
+            <a href="Register.html">Register</a>
             <input type="text" placeholder="Search for courses..">
         </nav>
     </header>
     <main>
-        <form action="register" method="POST">
-            <h1>Register</h1>
-            <img src="../Assets/avatar.jpg" width="30" height="30" alt="Avatar" class="avatar">
+        <form action="register" method="POST" >
+            <h1>Register and come with us!</h1>
             
-        
-            
+      
+            <img src="../Assets/avatar.jpg" width="60" height="60" alt="Avatar" class="avatar"><br>
+    
             
                 <label for="name"><b>Name</b></label><br>
-                <input type="text" placeholder="Enter name" name="name" required><br>
+                <input type="text" placeholder="Enter name" id="name" name="name" required><br>
 
                 <label for="surname"><b>Surname</b></label><br>
-                <input type="text" placeholder="Enter surname" name="surname" required><br>
+                <input type="text" placeholder="Enter surname" id="surname" name="surname" required><br>
 
                 <label for="username"><b>Username</b></label><br>
-                <input type="text" placeholder="Enter Username" name="username" required><br>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
 
                 <label for="email"><b>Email</b></label><br>
-                <input type="text" placeholder="Enter valid email" name="email" required><br>
+                <input type="text" placeholder="Enter valid email" id="email" name="email" required><br>
             
                 <label for="password"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter Password" name="password" required><br>
+                <input type="password" placeholder="Enter Password" id="password" name="password" required><br>
 
                 <label for="password-repeat"><b>Repeat Password</b></label><br>
-                <input type="password" placeholder="Repeat Password" name="password-repeat" id="psw-repeat" required> <br>
+                <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required> <br>
             
                 <p>By creating an account you agree to our <a href="https://www.edx.org/edx-terms-service">Terms & Privacy</a>.</p><br>
                 <button type="submit">Register</button>
               
+                <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
+                
 
-                <div class="signin">
-                    <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
-                  </div><br>
-
-            
             <br>
         
            
         </form>
         </main>
-        <footer>
+        <footer >
             <p>©Copyrights: Panagiotis-Marina</p>
 
         
@@ -88,6 +87,6 @@
             
                     
           
-        </footer>
+          </footer>
 </body>
 </html>

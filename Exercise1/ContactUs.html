@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>MOOC | Contact us</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
     </head>
 
@@ -14,21 +15,21 @@
                 <a href="Index.html">Home</a>
                 <a href="AboutUs.html">About Us</a>
                 <a href="ContactUs.html">Contact Us</a>
-                <a href="Register.html">Register</a>
                 <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
                 <input type="text" placeholder="Search for courses..">
             </nav>
         </header>
        
         <main>
-            <!--<img src="../Assets/contact.jpg"  aligh = right width="100" height="100" alt="contact">>!-->
-            <section>'Help will always be given at <del>Hogwarts</del> MOOC to those who ask for it.'-Albus Dumbledore </section>
+           
+            <h1>'Help will always be given at <del>Hogwarts</del> MOOC to those who ask for it.'-Albus Dumbledore </h1>
             
 
         </main>
         
         
-            <form method = 'POST' action="sending-form">
+            <form method = 'POST'>
             <fieldset>
                 <legend>Personal Details</legend>
 
@@ -39,7 +40,7 @@
               <label for="txt_surname">Surname</label><br>
               <input type="text" id="txt_surname" name="Surname" placeholder="Your surname.." required><br>
 
-              <label for="upload_here">Screenshot (Optional)</label><br>
+              <label for="file">Screenshot (Optional)</label><br>
               <input type="file" id="file" name="filename"><br>
              
             
@@ -131,7 +132,7 @@
                 <option value="Ghana">Ghana</option>
                 <option value="Gibraltar">Gibraltar</option>
                 <option value="Great Britain">Great Britain</option>
-                <option value="Greece" selected >Greece </option>
+                <option value="Greece" selected>Greece </option>
                 <option value="Greenland">Greenland</option>
                 <option value="Grenada">Grenada</option>
                 <option value="Guadeloupe">Guadeloupe</option>
@@ -325,7 +326,7 @@
                 
             
             
-              <textarea  name="text" rows="15" cols="40" placeholder="Fill the silence.." required></textarea> 
+              <textarea id="subject" name="subject" rows="15" cols="40" placeholder="Fill the silence.." required></textarea> 
               <input type="image" src="../Assets/arrow.jpg" alt="Submit" width ="50" height="50" />   
 
   </form>
