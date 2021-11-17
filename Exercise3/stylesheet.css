@@ -228,15 +228,26 @@ which repositions an element in the horizontal and/or vertical directions */
 /* We wanted the login and register options to be on the right,so we had to break the header menu. That's why we 
 created a class named box where we had the login and register. We used absolute position for the same reason as above. */
 .boxes {
-    position:absolute; 
-    right: 220px; 
-    top:80px;
+    position:absolute;
+    right: 0px;
+    top: 0px; 
     box-sizing: border-box;
     display: block;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20pt;
-    
-   
+    font-size: 20pt;  
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+nav .flex-container > a{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.2px;
+    border-color: rgb(145, 145, 145);
 }
 
 /* Our fonts.
