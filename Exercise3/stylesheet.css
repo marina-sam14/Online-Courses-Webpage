@@ -85,7 +85,7 @@ h3 {
 /* The picture in our first page, located in the center of our page. We used the display:block command because 
 we wanted for our page to be  displayed as a block, as paragraphs with whitespace above and below it.
 Our picture's size is changed  in order to deal with any window dimensions changes. */
-/* main div img {
+.index_img {
     background-image: url(/Assets/index.jpg);
     border-radius: 8px;
     display: block;
@@ -93,7 +93,7 @@ Our picture's size is changed  in order to deal with any window dimensions chang
     margin-right: auto;
     width: 50%;
     
-} */
+}
 
 
 /* The navigation menu in the first page is an order list located in the left side of our page. */
@@ -129,6 +129,15 @@ aside {
     font-family: sans-serif;
     font-size: 10pt;
 }
+
+/* Border color and style of the search bar */
+div input {
+    border-color: black;
+    border-style:groove;
+    border-radius: 6px;
+
+}
+
 
 
 /* We used float:left because we wanted our content to be positioned and formatted with images and letters. */
@@ -169,9 +178,24 @@ form {
 
 }
 
+
+
+/* Styling the form's fields. */
+form input  {
+    border-color: grey;
+    border-style:ridge;
+    border-radius: 6px;
+
+}
+
+/* The upload field is the only field in the form without border. */
+#upload_file > input {
+    border-style: hidden;
+}
+
 /* Text area is located on the left,the background is white. */
 textarea { 
-    height: 150px;
+    height: 180px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -180,6 +204,7 @@ textarea {
     resize: none;
     
 }
+
 
 /* The select option for the drop-down menu about countries. The border-style is groove. */
 select {
@@ -242,19 +267,25 @@ created a class named box where we had the login and register. We used absolute 
     font-size: 20pt;  
 }
 
+/* Flex area in the main menu bar where Μenu,About Us and Contact us are located */
 .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    
 }
 
+/* Flex area inside the main menu bar be styled with borders where Μenu,About Us and Contact us are located */
 nav .flex-container > a{
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: 0.2px;
     border-color: rgb(145, 145, 145);
+  
 }
 
+/* Flex area in the courses' pages where each course is appeared as a flex box.Row wrap is used for
+ wrapping the flex items onto multiple lines, from top to bottom */
 .flex-container-courses {
     display: flex;
     flex-flow: row wrap;
@@ -262,15 +293,16 @@ nav .flex-container > a{
     align-self: center;
 }
 
+/* Flex area with the details of each course, and the color of the border and the background one are specified. */
 .flex-container-courses dl {
     width: 400px;
     border-style: outset;
     border-width: 0.2em;
     margin: 1em;
     padding: 1em;
-    /* border-color: black; */
+    border-color: black;
     background-color: rgba(255, 166, 0, 0.527);
-    /* text-align: center; */
+   
 }
 
 /* Our fonts.
