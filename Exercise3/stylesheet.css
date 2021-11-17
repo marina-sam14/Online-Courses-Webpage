@@ -85,7 +85,7 @@ h3 {
 /* The picture in our first page, located in the center of our page. We used the display:block command because 
 we wanted for our page to be  displayed as a block, as paragraphs with whitespace above and below it.
 Our picture's size is changed  in order to deal with any window dimensions changes. */
-main div img {
+/* main div img {
     background-image: url(/Assets/index.jpg);
     border-radius: 8px;
     display: block;
@@ -93,7 +93,7 @@ main div img {
     margin-right: auto;
     width: 50%;
     
-}
+} */
 
 
 /* The navigation menu in the first page is an order list located in the left side of our page. */
@@ -253,6 +253,24 @@ nav .flex-container > a{
     border-bottom-style: solid;
     border-width: 0.2px;
     border-color: rgb(145, 145, 145);
+}
+
+.flex-container-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.flex-container-courses dl {
+    width: 400px;
+    border-style: outset;
+    border-width: 0.2em;
+    margin: 1em;
+    padding: 1em;
+    /* border-color: black; */
+    background-color: rgba(255, 166, 0, 0.527);
+    /* text-align: center; */
 }
 
 /* Our fonts.
