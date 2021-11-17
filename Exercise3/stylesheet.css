@@ -40,7 +40,7 @@ footer {
 /* Links */
 a {
     font-family: sans-serif;
-    font-size: 10pt;
+    font-size: 13pt;
     right: 2em;    
 }
 
@@ -64,7 +64,12 @@ a:hover{
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-
+/* Quotes are written in our font which we found online and are located in the center. */
+.quote {
+    text-align: center;
+    font-family: myFont;
+    font-size: 25pt;
+}
 
 
 

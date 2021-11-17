@@ -66,12 +66,11 @@ a:hover{
 
 
 
-/* Any h1 is written in our font which we found online and is located in the center. */
-h1 {
+/* Quotes are written in our font which we found online and are located in the center. */
+.quote {
     text-align: center;
     font-family: myFont;
-    font-size: 24pt;
-   
+    font-size: 25pt;
 }
 
 /* Any h3 uses Arial font and underline lightblue decoration */
@@ -96,11 +95,7 @@ main div img {
     
 }
 
-/* Images in h1 used in Subject_Areas page.  */
-h1 img {
-    margin-left: 0.8em;
-    padding: 15px;
-}
+
 
 /* The navigation menu in the first page is an order list located in the left side of our page. */
 section nav{
