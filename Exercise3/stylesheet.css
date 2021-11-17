@@ -1,0 +1,252 @@
+/* Choosing the color on the background and we chose margin=0 in order to avoid gaps between header and main. */
+body {
+
+    background-color: #f2f0ef;
+    margin: 0;
+}
+
+/*Choosing the background color of the header. The position is relative and we don't want to change the layout around it.
+We also chose fonts. */
+header {
+    
+    background-color: rgb(176, 176, 252);
+    padding: 1em;
+    position: relative;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14pt;
+    
+}
+
+/*Choosing the background color of the header. The position is absolute because we want it to stay in a specific position 
+based on the content of each page. We also chose fonts. */
+footer {
+    position: absolute;
+    width:100%; 
+    background-color: rgb(151, 149, 149);
+    font-family: 'Roboto',sans-serif;
+    font-size: 14pt;
+    
+}
+
+/* We had some issues content-heavy pages where the footer was in wrong place, so we use this version on these. */
+.spec_footer {
+    position: absolute;
+    bottom: 0px;
+    height: 120px;
+    background-color: rgb(151, 149, 149);
+    width: 100%;  
+}
+
+/* Links */
+a {
+    font-family: sans-serif;
+    font-size: 10pt;
+    right: 2em;    
+}
+
+/* selected link */
+a:active{
+    background-color: green;
+  }
+
+  /* unvisited link */
+a:link {
+    color: blue;
+}
+  
+  /* visited link */
+a:visited {
+    color: purple;
+}
+
+  /*hover link*/
+a:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+
+/* Any h3 uses Arial font and underline lightblue decoration */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    text-decoration: underline;
+    text-decoration-color: rgb(9, 183, 236);
+    
+}
+
+/* The picture in our first page, located in the center of our page. We used the display:block command because 
+we wanted for our page to be  displayed as a block, as paragraphs with whitespace above and below it.
+Our picture's size is changed  in order to deal with any window dimensions changes. */
+main div img {
+    background-image: url(/Assets/index.jpg);
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+
+/* The navigation menu in the first page is an order list located in the left side of our page. */
+section nav{
+    border-width: 0.1em;
+    border-style:solid;
+    border-color: black;
+    margin-left: -5px;
+    margin-right: 105em;
+   }
+
+/* Specific section where is our welcoming message written in italic. */
+#intro {
+    font-family: 'Roboto';
+    font-size: 15pt;
+    font-style: italic;
+    color:rgb(134, 64, 64);
+}
+
+/* The aside menu is located in a specific location on our page,in the right side and that's why we used the absolute position.
+We have color in the border and in the content. */
+aside {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(104, 28, 28);
+    background-color: #e9cdcd70;
+    padding: 1em;
+    padding-bottom: 5em;
+    margin: 1em;
+    position: absolute;
+    right: 4em;
+    top: 25em;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+
+/* We used float:left because we wanted our content to be positioned and formatted with images and letters. */
+dl dt img {
+    float: left;
+    padding: 15px;
+   
+}
+
+ /* The courses' title are written in Roboto with bold weight font.  */
+dl dt {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+/* The short description of each course is written in Times New Roman*/
+dd p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: gray;
+}
+
+/* Another one font which we found only, used in the unorder list about what we are going to learn in each course. */
+dd ul li {
+    font-family: myFont2;
+    font-size: 12pt;
+    color: black;
+}
+
+
+
+/* Form. The font of all fields is Roboto and the size is 12pt.*/
+form {
+    border: 3px solid #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+
+}
+
+/* Text area is located on the left,the background is white. */
+textarea { 
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    
+}
+
+/* The select option for the drop-down menu about countries. The border-style is groove. */
+select {
+    padding: 6px;
+    border-style:groove;
+    border-radius: 2px;
+    background-color: #f1f1f1;
+}
+
+  
+/* We created a button using a picture of an arrow and the cursor becomes pointer when we hover. */
+button {
+    background-color:rgb(199, 34, 34);
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    
+}
+
+/* The avatars in About_Us page, are located on the left because we wanted our content to be positioned and formatted with images and letters. */
+.profile_picture{
+    float: left;
+    padding: 15px;
+}
+
+
+/* Our names in About_Us.  */
+h2 {
+    font-family: myFont;
+    font-size: 24pt;
+}
+
+/* Login and Register Avatars are static because we wanted for them not to be 
+affected by the top, bottom, left, and right properties */
+.avatar {
+    position: static;
+    border-radius: 50%;    
+}
+
+
+/* We wanted the login menu to be located in the center of the page,but not the register menu. So we created an id and chose absolute position and the command translate
+which repositions an element in the horizontal and/or vertical directions */
+#account {
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+}
+
+/* We wanted the login and register options to be on the right,so we had to break the header menu. That's why we 
+created a class named box where we had the login and register. We used absolute position for the same reason as above. */
+.boxes {
+    position:absolute; 
+    right: 220px; 
+    top:80px;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    
+   
+}
+
+/* Our fonts.
+Source: https://fonts.google.com */
+@font-face {
+    font-family: 'myFont'; /*a name to be used later*/
+    src: url("../Assets/Petemoss-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'myFont2'; /*a name to be used later*/
+    src: url("../Assets/BarlowCondensed-Regular.ttf");
+}
