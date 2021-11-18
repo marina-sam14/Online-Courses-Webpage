@@ -1,15 +1,25 @@
-/* Choosing the color on the background and we chose margin=0 in order to avoid gaps between header and main. */
+/* Setting the variables */
+:root {
+    --main-color: #f2f0ef;
+    --main-head-color: rgb(176, 176, 252);
+    --main-foot-color: rgb(151, 149, 149);
+    
+  }
+
+/* Choosing the color on the background by the appropriate variable. Also we chose margin=0 in order to avoid gaps between header and main. */
 body {
 
-    background-color: #f2f0ef;
+    background-color: var(--main-color);
     margin: 0;
 }
 
-/*Choosing the background color of the header. The position is relative and we don't want to change the layout around it.
+
+
+/*Choosing the background color of the header by the appropriate variable. The position is relative and we don't want to change the layout around it.
 We also chose fonts. */
 header {
     
-    background-color: rgb(176, 176, 252);
+    background-color: var(--main-head-color);
     padding: 1em;
     position: relative;
     font-family: 'Roboto',sans-serif;
@@ -17,14 +27,15 @@ header {
     
 }
 
-/*Choosing the background color of the header. The position is absolute because we want it to stay in a specific position 
+/*Choosing the background color of the header by the appropriate variable. The position is absolute because we want it to stay in a specific position 
 based on the content of each page. We also chose fonts. */
 footer {
     position: absolute;
     width:100%; 
-    background-color: rgb(151, 149, 149);
+    background-color: var(--main-foot-color);
     font-family: 'Roboto',sans-serif;
     font-size: 14pt;
+    /* clear=left; */
     
 }
 
@@ -33,7 +44,7 @@ footer {
     position: absolute;
     bottom: 0px;
     height: 120px;
-    background-color: rgb(151, 149, 149);
+    background-color: var(--main-foot-color);
     width: 100%;  
 }
 
@@ -92,6 +103,7 @@ Our picture's size is changed  in order to deal with any window dimensions chang
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    /* margin-left: 450px; */
     
 }
 
@@ -267,6 +279,7 @@ created a class named box where we had the login and register. We used absolute 
     font-size: 20pt;  
 }
 
+/* CSS Flexbox */
 /* Flex area in the main menu bar where Μenu,About Us and Contact us are located */
 .flex-container {
     display: flex;
@@ -302,17 +315,18 @@ nav .flex-container > a{
     padding: 1em;
     border-color: black;
     background-color: rgba(255, 166, 0, 0.527);
+    
    
 }
 
 /* Our fonts.
 Source: https://fonts.google.com */
 @font-face {
-    font-family: 'myFont'; /*a name to be used later*/
+    font-family: 'myFont'; 
     src: url("../Assets/Petemoss-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'myFont2'; /*a name to be used later*/
+    font-family: 'myFont2';
     src: url("../Assets/BarlowCondensed-Regular.ttf");
 }
