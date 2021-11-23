@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>MOOC | Login </title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 
-        <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
-    </head>
-
+<head>
+    <meta charset="UTF-8">
+    <title>MOOC | Free Online Courses by AUEB</title>
+    <link rel="stylesheet" type="text/css" href="flex_style.css" />
+    <link rel="stylesheet" type="text/css" href="architecture_style.css" />
+    <!-- <link rel="stylesheet" href="grid_style.css" /> -->
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+</head>
 
 <body>
-    <header>
-        <nav>
-            <img src="../Assets/site_logo2.jpg" width="100" height="100" alt="site logo">
-            <div class="flex-container">
-                <a href="Index.html">Home</a>
-                <a href="AboutUs.html">About Us</a>
-                <a href="ContactUs.html">Contact Us</a>
-            </div>
-    
-            <div class="boxes">
-              <a href="Login.html">Login</a>
-              <a href="Register.html">Register</a>
-              <input type="text" placeholder="Search for courses..">
-            </div>
-        </nav>
-    </header>
+
+    <nav class="topMenuContainer">
+        <div class="flex-container">
+            <!-- <img src="../Assets/site_logo2.jpg" width="50" height="50" alt="site logo"> -->
+            <a href="Index.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Login.html">Login</a>
+            <a href="Register.html">Register</a>
+            <input type="text" placeholder="Search for courses..">
+        </div>
+    </nav>
+
     <main>
+        <section class="account">
         <form action="register" method="POST" >
             <h1 class="quote">Register and come with us!</h1>
             
@@ -65,32 +64,33 @@
         
            
         </form>
-        </main>
-        <footer >
-            <p>©Copyrights: Panagiotis-Marina</p>
-
+        </section>
         
-            <section><a href = "mailto:info@edx.org">
-                Send Feedback
+        </main>
+        <footer class="footerContainer">
+            <div class="ending">
+                <p>©Copyrights: Panagiotis-Marina</p>
+        
+        
+            <a href="mailto:info@edx.org">
+                        Send Feedback
                 </a>
-            </section>
+                
+        
+        
             
-
-            <section>
-                Find us online
-                <a href="https://www.facebook.com/edX">
-                <img alt="facebook" src="../Assets/facebook.jpg" width="20" height="20">
-                <a href="https://twitter.com/edXOnline">
-                <img alt="twitter" src="../Assets//twitter.jpg" width="20" height="20">
-                <a href="https://www.linkedin.com/school/edx/">
-                <img alt="linkedin" src="../Assets/linkedn.jpg" width="20" height="20">
-                <a href="https://www.reddit.com/r/edX/">
-                <img alt="reddit" src="../Assets/reddit.jpg" width="20" height="20">
-            </a>
-            </section>
-            
-                    
-          
-          </footer>
+                    Find us online
+                    <a href="https://www.facebook.com/edX">
+                    <img alt="facebook" src="../Assets/facebook.jpg" width="20" height="20">
+                    <a href="https://twitter.com/edXOnline">
+                    <img alt="twitter" src="../Assets//twitter.jpg" width="20" height="20">
+                    <a href="https://www.linkedin.com/school/edx/">
+                    <img alt="linkedin" src="../Assets/linkedn.jpg" width="20" height="20">
+                    <a href="https://www.reddit.com/r/edX/">
+                    <img alt="reddit" src="../Assets/reddit.jpg" width="20" height="20">
+                    </a>
+            </div>
+         
+        </footer>
 </body>
 </html>

@@ -1,0 +1,280 @@
+:root {
+    --main-color: #f2f0ef;
+    --main-head-color: rgb(176, 176, 252);
+    --main-foot-color: rgb(151, 149, 149);
+    
+  }
+
+  .topMenuContainer {
+    grid-area: nav;
+    background-color: var(--main-head-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    align-items: center;
+    font-family: roboto-regular;
+    font-size: 14pt;
+    height: 80px;
+  }
+
+  
+
+  /* .topMenuContainer > .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+  } */
+
+  /* .topMenuContainer > .boxes {
+    grid-area: nav;
+    right: 0px;
+    top: 0px; 
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14pt;
+  } */
+
+
+  .quote {
+    color: black;
+    text-align: center;
+    font-family: myFont;
+    font-size: 25pt;
+  }
+
+
+  #intro {
+    font-family: 'Roboto';
+    font-size: 15pt;
+    font-style: italic;
+    color: black;
+    color:rgb(134, 64, 64);
+  }
+
+  .nav_box {
+    padding: 1em;
+    border: rgb(104, 28, 28) solid;
+    border-width: 0.2em;
+    margin: 1em;
+    display: flex;
+    flex-direction:column;
+    background-color: #e9cdcd70;
+    border-radius: 5px 5px 5px 5px;
+    font-family: sans-serif;
+    font-size: 10pt;
+    
+  }
+
+  /* .index_img {
+    background-image: url(/Assets/index.jpg);
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } */
+
+  .news {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: rgb(104, 28, 28);
+    background-color: #e9cdcd70;
+    padding: 1em;
+    padding-bottom: 5em;
+    margin: 1em;
+    position: absolute;
+    right: 4em;
+    top: 25em;
+    font-family: sans-serif;
+    font-size: 10pt;
+  }
+
+
+
+.ending {
+    position: absolute;
+    /* display: flex; */
+    bottom: -20px;
+    height: 3px;
+    /* height: 120px; */
+    background-color: var(--main-foot-color);
+    width: 100%; 
+    color: black;
+    font-family: roboto-regular;
+    font-size: 14pt;
+
+}
+
+.courses {
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    flex-direction:column;
+   
+}
+
+.courses ul li {
+    font-family: myFont2;
+    font-size: 12pt;
+    color: black;
+}
+
+.courses a {
+    font-family: sans-serif;
+    font-size: 13pt;
+    right: 2em;
+}
+
+.courses h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.flex-container-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.flex-container-courses dl {
+   
+    width: 400px;
+    border-style: outset;
+    border-width: 0.2em;
+    margin: 1em;
+    padding: 1em;
+    border-color: black;
+    background-color: rgba(255, 166, 0, 0.527);
+    /* display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+
+
+.flex-container-courses dl dt {
+    color: black;
+}
+
+.flex-container-courses p {
+    color: black;
+}
+
+.flex-container-courses h3 {
+    color: black;
+}
+
+.flex-container-courses li {
+    color: black;
+}
+
+.flex-container-courses dd {
+    color: black;
+}
+
+.form {
+  border: 3px solid #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+
+}
+
+.form legend {
+  color: black;
+}
+
+.form label {
+  color: black;
+}
+
+.form fieldset {
+  border-color: black;
+}
+
+.form textarea {
+  border-color: black;
+}
+
+.form button  {
+    background-color:rgb(199, 34, 34);
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    
+}
+
+.about_us {
+  color: black;
+}
+
+.about_us select {
+  padding: 6px;
+  border-style:groove;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+}
+
+.account {
+  color: black;
+  left: 50%;
+  top : 50%;
+  position : absolute;
+  transform : translate(-50%, -50%);
+}
+
+.account button {
+  background-color: rgb(199, 34, 34);
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+/* .boxes {
+  position:absolute;
+  right: 0px;
+  top: 0px; 
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20pt;  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Our fonts.
+Source: https://fonts.google.com */
+@font-face {
+    font-family: 'myFont'; 
+    src: url("../Assets/Petemoss-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'myFont2';
+    src: url("../Assets/BarlowCondensed-Regular.ttf");
+}
