@@ -28,7 +28,6 @@ header {
     position: relative;
     font-family: 'Roboto',sans-serif;
     font-size: 14pt;
-    z-index: 2;
     
 }
 
@@ -137,11 +136,6 @@ Our picture's size is changed  in order to deal with any window dimensions chang
     padding-bottom: 4.5em;
 }
 
- /*.main {
-    margin: 5em;
-    margin-left: 5em;
-    margin-right: 5em;
-} */
 
 /* Specific section where is our welcoming message written in italic. */
 /* Changed margin and added text align - P*/
@@ -310,7 +304,7 @@ created a class named box where we had the login and register. We used absolute 
     font-size: 20pt;  
 }
 
-/* CSS Grid for index */
+/* CSS Grid */
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -319,7 +313,6 @@ created a class named box where we had the login and register. We used absolute 
     'footer footer footer';
     justify-content: space-between;
     /* gap: 10px; */
-    background-color: rgb(255, 255, 255);
     /* padding: 10px; */
 }
 
@@ -350,68 +343,6 @@ created a class named box where we had the login and register. We used absolute 
   grid-column: 1 / 4;
   grid-row: 3 / 4;
 }
-
-/* CSS Grid for Login/Register */
-.grid-container-logreg {
-    display: grid;
-    grid-template-areas: 
-    'header header header'
-    'main main main'
-    'footer footer footer';
-    grid-template-rows: 1fr 3fr 1fr;
-}
-
-.grid-container-logreg > .header {
-    grid-area: header;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
-
-.grid-container-logreg > .main {
-    grid-area: main;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-
-.grid-container-logreg > .footer {
-    grid-area: footer;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-}
-
-/* CSS Grid for the other pages */
-/* .grid-container {
-    display: grid;
-    grid-template-areas: 
-    'header header header'
-    'quote quote quote'
-    'main quote main'
-    'footer footer footer';
-}
-
-.grid-container > .header {
-    grid-area: header;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
-
-.quote {
-    grid-area: quote;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-
-.grid-container > .main {
-    grid-area: main;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-}
-
-.grid-container > .footer {
-    grid-area: footer;
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-} */
 
 /* CSS Flexbox */
 /* Flex area in the main menu bar where Μenu,About Us and Contact us are located */

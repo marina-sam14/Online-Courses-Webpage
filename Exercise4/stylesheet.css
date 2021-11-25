@@ -433,35 +433,6 @@ created a class named box where we had the login and register. We used absolute 
     }
 }
 
-
-/* CSS Grid for Login/Register */
-/* .grid-container-logreg {
-    display: grid;
-    grid-template-areas: 
-    'header header header'
-    'main main main'
-    'footer footer footer';
-    grid-template-rows: 1fr 3fr 1fr;
-}
-
-.grid-container-logreg > .header {
-    grid-area: header;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-}
-
-.grid-container-logreg > .main {
-    grid-area: main;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-
-.grid-container-logreg > .footer {
-    grid-area: footer;
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-} */
-
 /* CSS Flexbox */
 /* Flex area in the main menu bar where Μenu,About Us and Contact us are located */
 .flex-container {
