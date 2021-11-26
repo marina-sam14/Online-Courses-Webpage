@@ -49,15 +49,7 @@ footer {
     
 }
 
-/* We had some issues content-heavy pages where the footer was in wrong place, so we use this version on these. */
-/* With the use of flex we don't need this class anymore - P*/
-/* .spec_footer {
-    position: absolute;
-    bottom: 0px;
-    height: 120px;
-    background-color: var(--main-foot-color);
-    width: 100%;  
-} */
+
 
 /* Links */
 a {
@@ -104,22 +96,7 @@ h3 {
     
 }
 
-/* The picture in our first page, located in the center of our page. We used the display:block command because 
-we wanted for our page to be  displayed as a block, as paragraphs with whitespace above and below it.
-Our picture's size is changed  in order to deal with any window dimensions changes. */
-/* Changed margin-top - P*/
-/* .index_img {
-    background-image: url(/Assets/index.jpg);
-    border-radius: 8px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    width: 50%;
-    clear: both;
-    margin-left: 450px;
-    
-} */
+
 
 
 /* The navigation menu in the first page is an order list located in the left side of our page. */
@@ -310,20 +287,44 @@ created a class named box where we had the login and register. We used absolute 
     right: 0px;
     top: 0px; 
     box-sizing: border-box;
-    display: block;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20pt;  
+   
+    
 }
 
+/* Making the main picture in index responsive */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 40px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
 /* CSS Grid */
+@media only screen and (max-width: 550px) {
 .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
     grid-template-areas: 
     'header'
     'menu'
-    'main'
     'aside'
+    'main'
+    /* 'aside' */
     'footer';
 }
 
@@ -353,12 +354,25 @@ created a class named box where we had the login and register. We used absolute 
     grid-row: 2 / 3; */
 }
 
+.column {
+    flex: 100%;
+    max-width: 100%;
+  }
+.boxes a {
+    float: none;
+    width: 50%;
+}
+
+
+
 .footer {
   grid-area: footer;
   /* grid-column: 1 / 4;
   grid-row: 3 / 4; */
 }
+}
 
+/* Tablet */
 @media only screen and (min-width: 550px) {
     .grid-container {
         display: grid;
@@ -383,8 +397,19 @@ created a class named box where we had the login and register. We used absolute 
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    .boxes a {
+        float: none;
+        width: 100%;
+    }
     
 }
+
+/* Desktop */
 
 @media only screen and (min-width: 720px) {
     .grid-container {
@@ -431,6 +456,12 @@ created a class named box where we had the login and register. We used absolute 
       grid-column: 1 / 4;
       grid-row: 3 / 4;
     }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    
 }
 
 /* CSS Flexbox */
