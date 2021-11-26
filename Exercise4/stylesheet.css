@@ -197,6 +197,7 @@ dd ul li {
 
 /* Form. The font of all fields is Roboto and the size is 12pt.*/
 form {
+    margin: 4em;
     border: 3px solid #f1f1f1;
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
@@ -273,12 +274,12 @@ affected by the top, bottom, left, and right properties */
 
 /* We wanted the login menu to be located in the center of the page,but not the register menu. So we created an id and chose absolute position and the command translate
 which repositions an element in the horizontal and/or vertical directions */
-#account {
-    left      : 50%;
-    top       : 50%;
+/* #account {
+    
     position  : absolute;
-    transform : translate(-50%, -50%);
-}
+    left: 50%;
+    right: 50%;
+} */
 
 /* We wanted the login and register options to be on the right,so we had to break the header menu. That's why we 
 created a class named box where we had the login and register. We used absolute position for the same reason as above. */
@@ -315,7 +316,7 @@ created a class named box where we had the login and register. We used absolute 
   }
 
 /* CSS Grid */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
 .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
@@ -373,7 +374,7 @@ created a class named box where we had the login and register. We used absolute 
 }
 
 /* Tablet */
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 768px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -411,7 +412,7 @@ created a class named box where we had the login and register. We used absolute 
 
 /* Desktop */
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 1200px) {
     .grid-container {
         display: grid;
         grid-template-columns: 0.3fr 2fr 0.3fr;
