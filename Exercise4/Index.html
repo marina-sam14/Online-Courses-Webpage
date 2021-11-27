@@ -11,7 +11,7 @@
 </head>
 
 <body class="grid-container">
-    <header class="header">
+    <header>
         <nav>
             <img src="../Assets/site_logo2.jpg" width="100" height="100" alt="site logo">
             <div class="flex-container">
@@ -58,7 +58,11 @@
         </div> -->
         <div class="row">
             <div class="column">
-              <img src="../Assets/index.jpg">
+                <picture>
+                    <source media="(min-width:1200px)" srcset="../Assets/index.jpg">
+                    <source media="(min-width:768px)" srcset="../Assets/index2.jpg">
+                    <img src="../Assets/index3.jpg">
+                </picture>
             </div>
         </div>
     </main>

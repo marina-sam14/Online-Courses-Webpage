@@ -283,7 +283,7 @@ which repositions an element in the horizontal and/or vertical directions */
 
 /* We wanted the login and register options to be on the right,so we had to break the header menu. That's why we 
 created a class named box where we had the login and register. We used absolute position for the same reason as above. */
-.boxes {
+/* .boxes {
     position:absolute;
     right: 0px;
     top: 0px; 
@@ -292,7 +292,7 @@ created a class named box where we had the login and register. We used absolute 
     font-size: 20pt;  
    
     
-}
+} */
 
 /* Making the main picture in index responsive */
 
@@ -315,8 +315,11 @@ created a class named box where we had the login and register. We used absolute 
     width: 100%;
   }
 
+img {
+    max-width: 100%;
+}
+
 /* CSS Grid */
-@media only screen and (max-width: 768px) {
 .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
@@ -329,7 +332,7 @@ created a class named box where we had the login and register. We used absolute 
     'footer';
 }
 
-.header {
+header {
     grid-area: header;
     /* grid-column: 1 / 4;
     grid-row: 1 / 2; */
@@ -343,13 +346,13 @@ created a class named box where we had the login and register. We used absolute 
     grid-row: 2 / 3; */
 }
 
-.aside {
+aside {
     grid-area: aside;
     /* grid-column: 3 / 4;
     grid-row: 2 / 3; */
 }
 
-.main {
+main {
     grid-area: main;
     /* grid-column: 2 / 3;
     grid-row: 2 / 3; */
@@ -358,19 +361,14 @@ created a class named box where we had the login and register. We used absolute 
 .column {
     flex: 100%;
     max-width: 100%;
-  }
-.boxes a {
-    float: none;
-    width: 50%;
 }
 
 
 
-.footer {
+footer {
   grid-area: footer;
   /* grid-column: 1 / 4;
   grid-row: 3 / 4; */
-}
 }
 
 /* Tablet */
@@ -393,7 +391,7 @@ created a class named box where we had the login and register. We used absolute 
         grid-row: 2 / 3;
     }
 
-    .aside {
+    aside {
         width: 100%;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -403,10 +401,6 @@ created a class named box where we had the login and register. We used absolute 
         flex: 100%;
         max-width: 100%;
       }
-    .boxes a {
-        float: none;
-        width: 100%;
-    }
     
 }
 
@@ -427,7 +421,7 @@ created a class named box where we had the login and register. We used absolute 
         /* padding: 10px; */
     }
 
-    .header {
+    header {
         /* grid-area: header; */
         grid-column: 1 / 4;
         grid-row: 1 / 2;
@@ -440,19 +434,19 @@ created a class named box where we had the login and register. We used absolute 
         grid-row: 2 / 3;
     }
     
-    .aside {
+    aside {
         /* grid-area: aside; */
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
     
-    .main {
+    main {
         /* grid-area: main; */
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
     
-    .footer {
+    footer {
       /* grid-area: footer; */
       grid-column: 1 / 4;
       grid-row: 3 / 4;
