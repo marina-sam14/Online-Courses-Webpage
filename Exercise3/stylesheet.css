@@ -344,8 +344,10 @@ created a class named box where we had the login and register. We used absolute 
   grid-row: 3 / 4;
 }
 
+
 /* CSS Flexbox */
-/* Flex area in the main menu bar where Μenu,About Us and Contact us are located */
+/* Flex area in the main menu bar where the menu bar is located. 
+Menu bar concludes Home,About us,Contact us, Login,Register and a search bar. */
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -353,7 +355,7 @@ created a class named box where we had the login and register. We used absolute 
     
 }
 
-/* Flex area inside the main menu bar be styled with borders where Μenu,About Us and Contact us are located */
+/* Flex area inside the main menu bar be styled with borders. */
 nav .flex-container > a{
     border-top-style: solid;
     border-bottom-style: solid;
@@ -381,6 +383,8 @@ nav .flex-container > a{
     border-color: black;
     background-color: rgba(255, 166, 0, 0.527); 
 }
+
+
 
 /* Our fonts.
 Source: https://fonts.google.com */
