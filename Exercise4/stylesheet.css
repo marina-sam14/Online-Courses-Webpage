@@ -161,21 +161,21 @@ div input {
 
 
 
-/* We used float:left because we wanted our content to be positioned and formatted with images and letters.
+/* We used float:left because we wanted our content to be positioned and formatted with images and letters. */
 dl dt img {
     float: left;
     padding: 8px;
    
 }
 
- /* The courses' title are written in Roboto with bold weight font.  
+ /* The courses' title are written in Roboto with bold weight font.   */
 dl dt {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 14pt;
 }
 
- The short description of each course is written in Times New Roman
+ /* The short description of each course is written in Times New Roman */
 dd p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
@@ -184,13 +184,13 @@ dd p {
 
 
 
- Another one font which we found only, used in the unorder list about what we are going to learn in each course. 
+ /* Another one font which we found only, used in the unorder list about what we are going to learn in each course.  */
 dd ul li {
     font-family: myFont2;
     font-size: 12pt;
     color: black;
     
-} */
+}
 
 /* .main ul {
     margin: 8px;
@@ -258,7 +258,7 @@ button {
 .profile_picture{
     float: left;
     padding: 2px;
-    /* margin: 2em; */
+    
 }
 
 
@@ -266,6 +266,22 @@ button {
 h2 {
     font-family: myFont;
     font-size: 24pt;
+}
+
+.cv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    color: black;
+   
+   
+}
+
+#details {
+    margin: 2em;
+}
+
+.subj_areas {
+    margin: 2em;
 }
 
 /* Login and Register Avatars are static because we wanted for them not to be 
@@ -288,10 +304,13 @@ span {
 
 }
 
+/* We created an ID for the courses which are offered for every category and used the class profile_picture
+to combine the unirdered list and the picture. The last command is used for the  bullet points to be inside the list item 
+and outside from the picture.  */
 #offering li {
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-size: 12pt;
     color: black;
+    list-style-position: inside;
     
     
     
