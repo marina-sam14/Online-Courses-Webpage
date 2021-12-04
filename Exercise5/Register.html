@@ -51,30 +51,30 @@
         <span>Complete the forms and join to our community!</span>
 
         <form action="register" method="POST">
-            <details>
-                <summary>Personal Details</summary>
-                <br>
+           
            
             <fieldset>
-                <!-- <legend>Personal Details</legend> -->
+                <legend>Personal Details</legend>
 
                 <img src="../Assets/avatar.jpg" width="60" height="60" alt="Avatar" class="avatar"><br>
 
 
                 <label for="name">Name</label><br>
-                <input type="text" placeholder="Enter name" id="name" name="name" required autofocus><br>
+                <input type="text" placeholder="Enter name" id="name" name="name" list='names' required autofocus><br>
 
                 <datalist id="names">
-                    <option value="Marina">
-                    <option value="Panagiotis">
-                  </datalist>
+                    <option value="xyz"></option>
+                    <option value="Marina"></option>
+                    <option value="Panagiotis"></option>
+
+                </datalist>
 
                 <label for="surname">Surname</label><br>
-                <input type="text" placeholder="Enter surname" id="surname" name="surname" required><br>
+                <input type="text" placeholder="Enter surname" id="surname" name="surname" list='surnames' required><br>
 
                 <datalist id="surnames">
-                    <option value="Sam">
-                    <option value="Mich">
+                    <option value="Sam"></option>
+                    <option value="Mich"></option>
                   </datalist>
 
                 <label for="birthday">Date of Birth:</label><br>
@@ -331,9 +331,9 @@
                 </select><br>
 
                 <label for="phone">Phone number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Enter your phone number:" required><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890" list='phones' required><br>
                 <datalist id="phones">
-                    <option value="698-088-4422">
+                    <option value="698-088-4422"></option>
                     
                   </datalist>
 
@@ -346,11 +346,11 @@
                     required> <br>
 
                 <label for="email">Email</label><br>
-                <input type="text" placeholder="Enter valid email" id="email" name="email" required><br>
+                <input type="text" placeholder="Enter valid email" id="email" name="email" list='mails' required><br>
 
-                <datalist id="names">
-                    <option value="p3180234@aueb.gr">
-                    
+                <datalist id="mails">
+                    <option value="p3180234@aueb.gr"></option>
+                    <option value="xyz@gmail.com"></option>
                   </datalist>
 
                 <label for="username">Username</label><br>
@@ -364,7 +364,7 @@
                     required> <br>
 
             </fieldset>
-        </details>
+    
             <br>
             <details>
                 <summary>Questionnaire</summary>
@@ -568,8 +568,6 @@
 
 
                     </li>
-
-
 
 
                     <li>
