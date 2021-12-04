@@ -315,8 +315,8 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select><br>
 
-                <label for="phone">Phone Number</label><br>
-                <input type="tel" placeholder="Enter Phone Number" id="phone" name="phone" pattern="[0-9]" required><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{5}" placeholder="Enter your phone number:" required><br>
 
                 <label for="payment">Card Number</label><br>
                 <input type="payment" placeholder="Credit Card Number" name="payment-card" id="payment-card" required>
@@ -342,7 +342,7 @@
             </fieldset>
             <br>
 
-            <fieldset>
+            <fieldset >
                 <legend>Questionnaire</legend>
                 <ol>
                     <li>
@@ -364,41 +364,30 @@
                         <label for="other">Other</label><br>
                     </li>
 
-                    <!-- <li>
-                        <p>What is the level of your education? </p>
-                        
-                        <input type="checkbox" id="s1" name="s1" value="s1">
-                        <label for="s1">PhD</label><br>
-                        
-                        <input type="checkbox" id="s2" name="s2" value="s2">
-                        <label for="s2">Master</label><br>
-                        
-                        <input type="checkbox" id="s3" name="s3" value="s3">
-                        <label for="s3">Bachelor</label><br>
-
-                        <input type="checkbox" id="s4" name="s4" value="s4">
-                        <label for="s4">Student.</label><br>
-                        
-                       
-                    </li> -->
 
                     <li>
                         <p>What is your occupation? </p>
 
                         <input type="checkbox" id="s1" name="s1" value="s1">
-                        <label for="s1">Professor</label><br>
+                        <label for="s1">PhD's Student</label><br>
 
                         <input type="checkbox" id="s2" name="s2" value="s2">
-                        <label for="s2">Student</label><br>
+                        <label for="s2">Master's Student</label><br>
 
                         <input type="checkbox" id="s3" name="s3" value="s3">
-                        <label for="s3">Other</label><br>
+                        <label for="s3">Bachelor's Student</label><br>
+
+                        <input type="checkbox" id="s4" name="s4" value="s4">
+                        <label for="s4">Student</label><br>
+
+                        <input type="checkbox" id="s5" name="s5" value="s5">
+                        <label for="s5">Other</label><br>
 
 
                     </li>
 
                     <li>
-                        <p> You consider yourself as: </p>
+                        <p> What is the level of your computer skills? </p>
 
                         <input type="checkbox" id="s1" name="s1" value="s1">
                         <label for="s1">Expert</label><br>
@@ -416,22 +405,70 @@
                     </li>
 
                     <li>
+                        <p> Do you have access to a device for learning online? </p>
+
+                        <input type="checkbox" id="s1" name="s1" value="s1">
+                        <label for="s1">Yes</label><br>
+
+                        <input type="checkbox" id="s2" name="s2" value="s2">
+                        <label for="s2">No</label><br>
+
+                    </li>
+
+                    <li>
+                        <p> What device(s) do you use for distance learning? </p>
+
+                        <input type="checkbox" id="s1" name="s1" value="s1">
+                        <label for="s1">Desktop</label><br>
+
+                        <input type="checkbox" id="s2" name="s2" value="s2">
+                        <label for="s2">Laptop</label><br>
+
+                        <input type="checkbox" id="s3" name="s3" value="s3">
+                        <label for="s3">Tablet</label><br>
+
+                        <input type="checkbox" id="s4" name="s4" value="s4">
+                        <label for="s4">Smartphone</label><br>
+
+                    </li>
+
+                    <li>
+                        <p> Do you enjoy learning remotely? </p>
+
+                        <input type="checkbox" id="s1" name="s1" value="s1">
+                        <label for="s1">Absolutely</label><br>
+
+                        <input type="checkbox" id="s2" name="s2" value="s2">
+                        <label for="s2">Probably</label><br>
+
+                        <input type="checkbox" id="s3" name="s3" value="s3">
+                        <label for="s3">Probably not</label><br>
+
+                        <input type="checkbox" id="s4" name="s4" value="s4">
+                        <label for="s4">Not at all</label><br>
+
+                    </li>
+
+
+                    <li>
                         <p> How much time do you spend every day on homework? </p>
 
                         <input type="checkbox" id="s1" name="s1" value="s1">
-                        <label for="s1">Up to 2 hours</label><br>
+                        <label for="s1">Less than 2 hours</label><br>
 
                         <input type="checkbox" id="s2" name="s2" value="s2">
-                        <label for="s2">Up to 3 hours</label><br>
+                        <label for="s2">Less than 3 hours</label><br>
 
                         <input type="checkbox" id="s3" name="s3" value="s3">
-                        <label for="s3">Up to 4 hours</label><br>
+                        <label for="s3">Less than 4 hours</label><br>
 
                         <input type="checkbox" id="s4" name="s4" value="s4">
-                        <label for="s4">Minimum 5 hours</label><br>
+                        <label for="s4">Less than 5 hours</label><br>
 
-                        <input type="checkbox" id="s4" name="s4" value="s4">
-                        <label for="s4">I am not a student</label><br>
+                        <input type="checkbox" id="s5" name="s5" value="s5">
+                        <label for="s5">More than 5 hours</label><br>
+
+
 
 
                     </li>
@@ -444,6 +481,9 @@
 
                         <input type="checkbox" id="s2" name="s2" value="s2">
                         <label for="s2">Personal coaching</label><br>
+
+                        <input type="checkbox" id="s3" name="s3" value="s3">
+                        <label for="s3">Using online materials </label><br>
 
 
                     </li>
@@ -458,14 +498,17 @@
                         <label for="s2">Projects</label><br>
 
                         <input type="checkbox" id="s3" name="s3" value="s3">
-                        <label for="s3">Disscussing with colleagues</label><br>
+                        <label for="s3">Disscussion with colleagues</label><br>
+
+                        <input type="checkbox" id="s3" name="s3" value="s3">
+                        <label for="s3">Other</label><br>
 
 
                     </li>
 
 
                     <li>
-                        <p> Which period of the day your studying is more efficient? </p>
+                        <p> Which period of the day is your studying more efficient? </p>
 
                         <input type="checkbox" id="s1" name="s1" value="s1">
                         <label for="s1">In the morning</label><br>
@@ -498,8 +541,11 @@
 
                     </li>
 
+
+
+
                     <li>
-                        <p> How did you find us? </p>
+                        <p> What led you to this website? </p>
 
                         <input type="checkbox" id="s1" name="s1" value="s1">
                         <label for="s1">Through a friend</label><br>
@@ -522,8 +568,8 @@
             </fieldset>
             <br>
 
-            <fieldset>
-                <legend> Brief cv </legend>
+            <fieldset required>
+                <legend> Educational Information </legend>
                 <ul>
                     <li>
                         <p>What is the level of your education? </p>
@@ -538,13 +584,13 @@
                         <label for="s3">Bachelor</label><br>
 
                         <input type="checkbox" id="s4" name="s4" value="s4">
-                        <label for="s4">Student.</label><br>
+                        <label for="s4">Student</label><br>
                     </li>
 
                     <li>
                         <p>Graduation year</p>
                         <select id="year" name="year">
-                            <option>year</option>
+                            <option>year</option><br>
                             <option value="1940">1940</option>
                             <option value="1941">1941</option>
                             <option value="1942">1942</option>
@@ -628,27 +674,42 @@
                             <option value="2020">2020</option>
                             <option value="2021">2021</option>
                         </select>
-                        
+                        <br>
+                        <br><input type="checkbox" id="s1" name="s1" value="s1">
+                        <label for="s1">I am undergratuated student</label><br>
+
                     </li>
 
                     <li>
-                        <p>I have degree in:</p>
-                        <textarea id="found_us" name="found_us" rows="4" cols="10" placeholder="Your field: "></textarea><br>
+                        <p>In which field do you have a degree?</p>
+                        <textarea id="found_us" name="found_us" rows="4" cols="40" placeholder=" "></textarea><br>
                         <input type="checkbox" id="s1" name="s1" value="s1">
                         <label for="s1">I don't have a degree</label><br>
 
 
+                    </li>
+
+                    <li>
+                        <p>What language do you speak?</p>
+                        <textarea id="language" name="language" rows="4" cols="40" placeholder=" "></textarea><br>
+
+                    </li>
+
+                    <li>
+                        <p>What achievements are you most proud of as a student? </p>
+                        <textarea id="achievements" name="achievements" rows="4" cols="40"
+                            placeholder="Scholarships, Awards etc "></textarea><br>
                     </li>
                 </ul>
 
 
 
             </fieldset>
+            <br>
 
-            <button type="next_page">Next page<a href="questionnaire.html"></a></button>
-
-
-
+            <button type="next_page">Submit</button>
+            
+            
             <div class="signin">
                 <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
             </div><br>
@@ -687,6 +748,7 @@
 
 
     </footer>
+
 </body>
 
 </html>
