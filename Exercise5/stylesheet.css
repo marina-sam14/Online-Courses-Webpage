@@ -305,6 +305,8 @@ span {
 
 }
 
+
+
 details summary{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13pt;
@@ -336,6 +338,11 @@ fieldset input {
     border: 3px solid #555;
 }
 
+#temp {
+    float: right;
+    padding: 20px;
+    margin-right: 10em;
+}
 
 
 
