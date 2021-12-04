@@ -51,8 +51,12 @@
         <span>Complete the forms and join to our community!</span>
 
         <form action="register" method="POST">
-           
-            <img id="temp" src="../Assets/desk.jpg" width="350" height="450" alt="temp" ><br>
+            <picture>
+                <source media="(min-width:1200px)" srcset="../Assets/desk.jpg">
+                <source media="(min-width:768px)" srcset="../Assets/desk2.jpg">
+                <img id="desk" src="../Assets/desk3.jpg" alt="desk">
+            </picture>
+            <br>
            
             <fieldset>
                 <legend>Personal Details</legend>
@@ -338,7 +342,7 @@
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890" list='phones' required><br>
                 <datalist id="phones">
                     <option value="698-088-4422"></option>
-                    
+                    <option value="697-268-0698"></option>
                   </datalist>
 
                 <label for="payment">Card Number</label><br>
@@ -354,7 +358,7 @@
 
                 <datalist id="mails">
                     <option value="p3180234@aueb.gr"></option>
-                    <option value="xyz@gmail.com"></option>
+                    <option value="p3170217@aueb.gr"></option>
                   </datalist>
 
                 <label for="username">Username</label><br>
@@ -743,7 +747,7 @@
         </details>
             <br>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
             
             
             <div class="signin">

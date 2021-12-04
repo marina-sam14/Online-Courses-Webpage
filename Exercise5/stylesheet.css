@@ -338,19 +338,31 @@ fieldset input {
     border: 3px solid #555;
 }
 
-#temp {
+#desk {
     float: right;
-    padding: 20px;
-    margin-right: 10em;
+    text-align: center;
+    margin-top: 26px;
+    border-radius: 40px;
 }
 
-
+fieldset {
+    border-radius: 40px;
+}
 
 fieldset ul li p label {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12pt;
     display: inline-block;
 
+}
+
+#country {
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.submit {
+    border-radius: 25px;
 }
 
 /* We created an ID for the courses which are offered for every category and used the class profile_picture
