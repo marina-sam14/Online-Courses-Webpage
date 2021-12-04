@@ -48,10 +48,12 @@
 
     <main class="main">
         <h1 class="quote">Register and come with us!</h1>
+        <span>Complete the forms and join to our community!</span>
 
         <form action="register" method="POST">
             <details>
                 <summary>Personal Details</summary>
+                <br>
            
             <fieldset>
                 <!-- <legend>Personal Details</legend> -->
@@ -62,8 +64,18 @@
                 <label for="name">Name</label><br>
                 <input type="text" placeholder="Enter name" id="name" name="name" required autofocus><br>
 
+                <datalist id="names">
+                    <option value="Marina">
+                    <option value="Panagiotis">
+                  </datalist>
+
                 <label for="surname">Surname</label><br>
                 <input type="text" placeholder="Enter surname" id="surname" name="surname" required><br>
+
+                <datalist id="surnames">
+                    <option value="Sam">
+                    <option value="Mich">
+                  </datalist>
 
                 <label for="birthday">Date of Birth:</label><br>
                 <input type="date" id="birthday" name="birthday"><br>
@@ -319,7 +331,11 @@
                 </select><br>
 
                 <label for="phone">Phone number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{2}[0-9]{5}" placeholder="Enter your phone number:" required><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Enter your phone number:" required><br>
+                <datalist id="phones">
+                    <option value="698-088-4422">
+                    
+                  </datalist>
 
                 <label for="payment">Card Number</label><br>
                 <input type="payment" placeholder="Credit Card Number" name="payment-card" id="payment-card" required>
@@ -331,6 +347,11 @@
 
                 <label for="email">Email</label><br>
                 <input type="text" placeholder="Enter valid email" id="email" name="email" required><br>
+
+                <datalist id="names">
+                    <option value="p3180234@aueb.gr">
+                    
+                  </datalist>
 
                 <label for="username">Username</label><br>
                 <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
@@ -347,7 +368,9 @@
             <br>
             <details>
                 <summary>Questionnaire</summary>
+                <br>
             <fieldset >
+              
                 <!-- <legend>Questionnaire</legend> -->
                 <ol>
                     <li>
@@ -576,7 +599,9 @@
 
             <details>
                 <summary>Educational Information</summary>
+                <br>
             <fieldset>
+               
                 <!-- <legend> Educational Information </legend> -->
                 <ul>
                     <li>
@@ -716,7 +741,7 @@
         </details>
             <br>
 
-            <button type="next_page">Submit</button>
+            <button type="submit">Submit</button>
             
             
             <div class="signin">
