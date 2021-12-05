@@ -301,10 +301,16 @@ span {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14pt;
     font-weight: bold;
-    margin: 2em;
+    margin: 3em;
 
 }
 
+details {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
 
 
 details summary{
@@ -338,12 +344,12 @@ fieldset input {
     border: 3px solid #555;
 }
 
-#desk {
+/* #desk {
     float: right;
     text-align: center;
     margin-top: 26px;
     border-radius: 40px;
-}
+} */
 
 fieldset {
     border-radius: 40px;
@@ -412,7 +418,7 @@ img {
 /* Mobile Phones */
 .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 20fr 1fr;
     grid-template-areas: 
     'header'
     'menu'
@@ -453,8 +459,6 @@ main {
     max-width: 100%;
 }
 
-
-
 footer {
   grid-area: footer;
   /* grid-column: 1 / 4;
@@ -473,7 +477,7 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.2fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
         grid-template-areas: 
         'header header'
         'menu aside'
@@ -507,7 +511,7 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: 0.3fr 2fr 0.3fr;
-        grid-template-rows: 0.2fr 2fr 0.1fr;
+        grid-template-rows: 0.2fr 20fr 0.1fr;
         grid-template-areas:
         'header header header'
         'navbar main aside'
