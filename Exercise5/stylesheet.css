@@ -231,6 +231,7 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: vertical;
+    width: 148px;
     
 }
 
@@ -238,6 +239,7 @@ textarea {
 /* The select option for the drop-down menu about countries. The border-style is groove. */
 select {
     padding: 6px;
+    width: 12em;
     border-style:groove;
     border-radius: 2px;
     background-color: #f1f1f1;
@@ -319,6 +321,10 @@ details summary{
     font-style: italic;
     cursor: pointer;
     
+}
+
+fieldset {
+    min-width: 100%
 }
 
 fieldset ol li p {
@@ -477,7 +483,7 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 0.2fr 3.5fr 0.1fr;
         grid-template-areas: 
         'header header'
         'menu aside'
@@ -511,7 +517,7 @@ footer {
     .grid-container {
         display: grid;
         grid-template-columns: 0.3fr 2fr 0.3fr;
-        grid-template-rows: 0.2fr 20fr 0.1fr;
+        grid-template-rows: 0.2fr 10fr 0.1fr;
         grid-template-areas:
         'header header header'
         'navbar main aside'
