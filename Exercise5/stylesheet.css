@@ -211,7 +211,7 @@ form {
 
 /* Styling the form's fields. */
 form input  {
-    border-color: grey;
+    /* border-color: grey; */
     border-style:ridge;
     border-radius: 6px;
 
@@ -352,9 +352,9 @@ fieldset ul li p {
     font-weight: bold;
 }
 
-fieldset input {
+/* fieldset input {
     border: 3px solid #555;
-}
+} */
 
 /* #desk {
     float: right;
@@ -424,6 +424,20 @@ img {
 }
 
 
+/* html validation */
+input:valid {
+    border-color: green;
+}
+
+input:invalid:required {
+    border-color: red;
+}
+
+/* Constraint Validation API */
+
+input.error {
+    border-color: red;
+}
 
 /* CSS Grid */
 
