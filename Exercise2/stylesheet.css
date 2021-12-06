@@ -160,6 +160,8 @@ dd ul li {
     color: black;
 }
 
+
+
 /* The images in the paragraphs in Subject_Areas is located on the left 
 p > img {
     float: left;
@@ -213,9 +215,15 @@ button {
 
 
 /* Our names in About_Us.  */
-h2 {
+article > h2  {
     font-family: myFont;
     font-size: 24pt;
+}
+
+/* Titles after our names.  */
+article > h2 + p   {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10pt;
 }
 
 /* Login and Register Avatars are static because we wanted for them not to be 
