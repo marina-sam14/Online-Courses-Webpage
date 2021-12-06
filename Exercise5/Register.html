@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOOC | Register </title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="temp.js" type="text/javascript"></script>
 
     <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
 </head>
@@ -50,7 +51,7 @@
         <h1 class="quote">Register and come with us!</h1>
         <!-- <span>Complete the forms and join to our community!</span> -->
 
-        <form action="register" method="POST">
+        <form action="register" method="POST" id="form"  >
             <!-- <picture>
                 <source media="(min-width:1200px)" srcset="../Assets/desk.jpg">
                 <source media="(min-width:768px)" srcset="../Assets/desk2.jpg">
@@ -69,7 +70,9 @@
 
 
                 <label for="name">Name</label><br>
-                <input type="text" placeholder="Enter name" id="name" name="name" list='names' required autofocus><br>
+                <input type="text" placeholder="Enter name" id="name" name="name" list='names' 
+                pattern="[A-Za-z]+" oninvalid="InvalidName(this);" required autofocus> <br>
+                
 
                 <datalist id="names">
                     <option value="xyz"></option>
@@ -79,7 +82,9 @@
                 </datalist>
 
                 <label for="surname">Surname</label><br>
-                <input type="text" placeholder="Enter surname" id="surname" name="surname" list='surnames' required><br>
+                <input type="text" placeholder="Enter surname" id="surname" name="surname" list='surnames' 
+                pattern="[A-Za-z]+" oninvalid="InvalidSurname(this);" required><br>
+                 <!-- oninvalid="this.setCustomValidity('Enter Your Surname Here')" oninput="this.setCustomValidity('')" -->
 
                 <datalist id="surnames">
                     <option value="Sam"></option>
@@ -87,7 +92,8 @@
                   </datalist>
 
                 <label for="birthday">Date of Birth:</label><br>
-                <input type="date" id="birthday" name="birthday"><br>
+                <input type="date" id="birthday" name="birthday" 
+                     required><br>
 
                 <label for="country">Country: </label> <br>
                 <select name="country" id="country">
@@ -340,14 +346,18 @@
                 </select><br>
 
                 <label for="phone">Phone number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890" list='phones' required><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" list='phones' 
+                     required>
+                <br><small>Format: 123-456-7890</small><br>
                 <datalist id="phones">
                     <option value="698-088-4422"></option>
                     <option value="697-268-0698"></option>
                   </datalist>
+            
 
                 <label for="payment">Card Number</label><br>
-                <input type="payment" placeholder="Credit Card Number" name="payment-card" id="payment-card" required>
+                <input type="payment" placeholder="Credit Card Number" name="payment-card" id="payment-card" 
+                     required>
                 <br>
 
                 <label for="address">Charging Address</label><br>
@@ -355,7 +365,8 @@
                     required> <br>
 
                 <label for="email">Email</label><br>
-                <input type="text" placeholder="Enter valid email" id="email" name="email" list='mails' required><br>
+                <input type="email" placeholder="Enter valid email" id="email" name="email" list='mails' 
+                oninvalid="InvalidEmail(this);" required><br>
 
                 <datalist id="mails">
                     <option value="p3180234@aueb.gr"></option>
@@ -363,14 +374,16 @@
                   </datalist>
 
                 <label for="username">Username</label><br>
-                <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
+                <input type="text" placeholder="Enter Username" id="username" name="username" 
+                     required><br>
 
                 <label for="password">Password</label><br>
-                <input type="password" placeholder="Enter Password" id="password" name="password" required><br>
+                <input type="password" placeholder="Enter Password" id="password" name="password" 
+                    required><br>
 
                 <label for="password-repeat">Repeat Password</label><br>
                 <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat"
-                    required> <br>
+                   required> <br>
 
             </fieldset>
     
@@ -748,7 +761,8 @@
         </details>
             <br>
 
-            <button type="submit" class="submit">Submit</button>
+            <!-- <button type="submit" class="submit">Submit</button> -->
+            <input type="submit" name="submit" id="reg_submit">
             
             
             <div class="signin">

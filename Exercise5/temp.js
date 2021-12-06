@@ -16,20 +16,66 @@
 
 // })
 
-window.onload = main;
+// window.onload = InvalidMsg(textbox);
 
-function main(){
-    let txtCard = document.getElementById("payment-card")
+// function main(){
+//     let txtCard = document.getElementById("payment-card")
 
-    txtCard.onchange = function() {
-        let valid = false
+//     txtCard.onchange = function() {
+//         let valid = false
 
-        if (!valid) {
-            txtCard.setCustomValidity ("Card is invalid or the number is wrong")
-        }
-        else{
-            this.setCustomValidity('')
-        }
+//         if (!valid) {
+//             txtCard.setCustomValidity ("Card is invalid or the number is wrong")
+//         }
+//         else{
+//             this.setCustomValidity('')
+//         }
+//     }
+// }
+
+function InvalidName(textbox) {
+
+    if (textbox.validity.patternMismatch) {
+        textbox.setCustomValidity('Name can only contain upper and lowercase letters. Try again');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+
+function InvalidSurname(textbox) {
+
+    if (textbox.validity.patternMismatch) {
+        textbox.setCustomValidity('Surname can only contain upper and lowercase letters. Try again!');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+
+function InvalidSurname(textbox) {
+
+    if (textbox.validity.patternMismatch) {
+        textbox.setCustomValidity('Surname can only contain upper and lowercase letters. Try again!');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+
+function InvalidDate(textbox) {
+    var date = this.getValue();
+    var now = new Date();
+    //Validate birth date some time before today's date and
+    //within 120 years
+    if (date == null {
+        textbox.setCustomValidity("Can't be empty");
+
+    } else {
+        false;
     }
 }
 
@@ -37,12 +83,12 @@ function main(){
 // cardValidatorError.innerHTML = <i class = "fas fa-exclamation-circle"></i>
 //                                 'Invalid Card'
 
-const email = document.getElementById("email");
+// const email = document.getElementById("email");
 
-email.addEventListener("input", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an e-mail address!");
-  } else {
-    email.setCustomValidity("");
-  }
-});
+// email.addEventListener("input", function (event) {
+//   if (email.validity.typeMismatch) {
+//     email.setCustomValidity("I am expecting an e-mail address!");
+//   } else {
+//     email.setCustomValidity("");
+//   }
+// });
