@@ -424,19 +424,15 @@ img {
 }
 
 
-/* html validation */
-input:valid {
-    border-color: green;
-}
-
-input:invalid:required {
+/* validation */
+.error {
     border-color: red;
 }
 
-/* Constraint Validation API */
-
-input.error {
-    border-color: red;
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-top: 1em;
 }
 
 /* CSS Grid */
