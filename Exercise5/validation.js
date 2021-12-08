@@ -14,6 +14,11 @@ var password2 = document.querySelector("#password-repeat")
 var birthdayInput = document.querySelector("#birthday")
 
 
+formRegister.addEventListener("click", e => {
+    console.log(e.target)
+
+})
+
 birthdayInput.addEventListener("input", () => {
     let date = new Date(birthdayInput.value)
     let currentDate = new Date()
@@ -22,7 +27,7 @@ birthdayInput.addEventListener("input", () => {
     if (validDate > date) {
         birthdayInput.setCustomValidity("You have to be over 16 to join the club :) We are sorry about this ask your parents if you still wish to enter!")
         birthdayInput.reportValidity()
-    }else {
+    } else {
         birthdayInput.setCustomValidity("")
         birthdayInput.reportValidity()
     }
@@ -51,7 +56,7 @@ function customSubmit(event) {
         password2.setCustomValidity("Passwords are not identical. Make sure you are typing the same password")
         password2.reportValidity()
         return
-    }else{
+    } else {
         password2.setCustomValidity("")
         password2.reportValidity()
     }
