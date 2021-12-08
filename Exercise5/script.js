@@ -14,8 +14,7 @@ const userName = document.querySelector("#username")
 const password1 = document.querySelector("#password")
 const password2 = document.querySelector("#password-repeat")
 const paymentCard = document.querySelector("#payment-card")
-//const paymentAddress = document.querySelector("#payment-address")
-//const Phone = document.querySelector("#phone")
+
 
 
 form.addEventListener('submit', e => {
@@ -58,8 +57,12 @@ const validateInputs = () => {
     
 
     if(usernameValue === '') {
-        setError(username, 'Please enter your username');
-    } else {
+        setError(userName, 'Please enter your username');
+    }
+    else if (usernameValue.length < 8){
+        setError(userName,"Username must be at least 8 characters!")
+    } 
+    else {
         setSuccess(userName);
     }
 
@@ -91,7 +94,7 @@ const validateInputs = () => {
     if (password2Value === ' '){
         setError(password2,"Confirm your password please");
     }
-    else if (password2Value != password2Value){
+    else if (password2Value != password1Value){
         setError(password2,"Passwords don't match!");
         
     }
@@ -115,23 +118,3 @@ const validateInputs = () => {
 
 
 
-// birthDate.addEventListener("input", () => {
-//     let date = new Date(birthdayInput.value)
-//     let currentDate = new Date()
-//     let validDate = new Date(currentDate.getFullYear() - 18, currentDate.getMonth(), currentDate.getDay(), 0, 0, 0, 0)
-
-//     if (validDate < date) {
-//         birthdayInput.setCustomValidity("You have to be over 16 to join the course. ")
-//         birthdayInput.reportValidity()
-//     }else {
-//         birthdayInput.setCustomValidity("")
-//         birthdayInput.reportValidity()
-//     }
-// })
-
-
-
-//form.addEventListener('submit', logSubmit);
-//form.addEventListener("load", e => {
-//    console.log("Hello")
-//})

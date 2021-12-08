@@ -428,15 +428,12 @@ and outside from the picture.  */
 	display: block;
 	font-size: 12px;
 	padding: 10px;
-	
+	border-radius:8px;
 }
 
-/* .input-control input:focus {
-    outline: 0;
-} */
 
 .input-control.success input {
-    border-color: #09c372;
+    border-color:rgb(65, 206, 65);
 }
 
 .input-control.error input {
