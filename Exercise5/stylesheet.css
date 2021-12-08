@@ -3,6 +3,8 @@
     --main-color: #f2f0ef;
     --main-head-color: rgb(176, 176, 252);
     --main-foot-color: rgb(151, 149, 149);
+    --success:rgb(65, 206, 65);
+    --error:ff3860;
     
   }
 
@@ -219,23 +221,35 @@ form {
 
 /* Text area is located on the left,the background is white. */
 textarea { 
-    height: 180px;
-    width: 100%; 
-    max-width: 100%;
+    height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: vertical;
-    width: 148px;
+    width: 140px;
     
+}
+
+#comment {
+    /* height: 240px; */
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    width: 390px;
+    min-height: 75px;
+    outline: none;
+    resize: none;
 }
 
 #country {
     padding: 16px;
     width: 100%;
     border-style:groove;
+    border-color: black;
     border-radius: 2px;
     background-color: #f1f1f1;
 }
@@ -246,6 +260,7 @@ select {
     padding: 6px;
     width: 25%;
     border-style:groove;
+    border-color: black;
     border-radius: 2px;
     background-color: #f1f1f1;
 }
@@ -376,14 +391,9 @@ fieldset ul li p {
 
 fieldset input {
     border: 3px solid #555;
+    border-radius:8px;
 }
 
-/* #desk {
-    float: right;
-    text-align: center;
-    margin-top: 26px;
-    border-radius: 40px;
-} */
 
 fieldset {
     border-radius: 40px;
@@ -438,17 +448,18 @@ and outside from the picture.  */
 
 
 .input-control.success input {
-    border-color:rgb(65, 206, 65);
+    border-color:var(--success);
 }
 
 .input-control.error input {
-    border-color: #ff3860;
+    border-color: var(--error);
     font-family: 'Courier New', Courier, monospace;
     font-size: 12pt;
 }
 
+/* Class using for javascript errors */
 .input-control .error {
-    color: #ff3860;
+    color:var(--error);
     font-size: 14px;
     height: 13px;
 }
@@ -492,34 +503,29 @@ img {
     'menu'
     'aside'
     'main'
-    /* 'aside' */
     'footer';
 }
 
 header {
     grid-area: header;
-    /* grid-column: 1 / 4;
-    grid-row: 1 / 2; */
+    
 }
 
 
 .menu {
     grid-area: navbar;
     grid-row: 2 / 3;
-    /* grid-column: 1 / 2;
-    grid-row: 2 / 3; */
+    
 }
 
 aside {
     grid-area: aside;
-    /* grid-column: 3 / 4;
-    grid-row: 2 / 3; */
+    
 }
 
 main {
     grid-area: main;
-    /* grid-column: 2 / 3;
-    grid-row: 2 / 3; */
+    
 }
 
 .column {
@@ -529,8 +535,7 @@ main {
 
 footer {
   grid-area: footer;
-  /* grid-column: 1 / 4;
-  grid-row: 3 / 4; */
+
 }
 
 @media only screen and (max-width: 535px) {
@@ -585,38 +590,36 @@ footer {
         'navbar main aside'
         'footer footer footer';
         justify-content: space-between;
-        /* gap: 10px; */
-        /* background-color: rgb(255, 255, 255); */
-        /* padding: 10px; */
+       
     }
 
     header {
-        /* grid-area: header; */
+       
         grid-column: 1 / 4;
         grid-row: 1 / 2;
     }
     
     
     .menu {
-        /* grid-area: navbar; */
+       
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
     
     aside {
-        /* grid-area: aside; */
+        
         grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
     
     main {
-        /* grid-area: main; */
+        
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
     
     footer {
-      /* grid-area: footer; */
+      
       grid-column: 1 / 4;
       grid-row: 3 / 4;
     }

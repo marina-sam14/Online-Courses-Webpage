@@ -1,0 +1,37 @@
+Date : 2021-12-09 01:01:48
+Directory : c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5
+Total : 11 files,  2503 codes, 77 comments, 594 blanks, all 3174 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          9 |      1,970 |          3 |        395 |      2,368 |
+| CSS        |          1 |        447 |         74 |        164 |        685 |
+| JavaScript |          1 |         86 |          0 |         35 |        121 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                          | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                             |         11 |      2,503 |         77 |        594 |      3,174 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                      | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\AboutUs.html             | HTML       |         91 |          0 |         20 |        111 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Coding_Courses.html      | HTML       |        170 |          0 |         26 |        196 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\ContactUs.html           | HTML       |        353 |          0 |         45 |        398 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Development_Courses.html | HTML       |        208 |          0 |         28 |        236 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Index.html               | HTML       |         79 |          3 |         16 |         98 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Login.html               | HTML       |         77 |          0 |         35 |        112 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\NetworkSec_Courses.html  | HTML       |        196 |          0 |         38 |        234 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Register.html            | HTML       |        673 |          0 |        158 |        831 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\Subject_Areas.html       | HTML       |        123 |          0 |         29 |        152 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\script.js                | JavaScript |         86 |          0 |         35 |        121 |
+| c:\Users\Μαρίνα Σαμ\Desktop\WebDevelopment\Exercise5\stylesheet.css           | CSS        |        447 |         74 |        164 |        685 |
+| Total                                                                         |            |      2,503 |         77 |        594 |      3,174 |
++-------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

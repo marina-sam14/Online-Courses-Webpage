@@ -91,14 +91,14 @@
 
 
             <div class="input-control">
-                <label class="required" for="birthday">Date of Birth:</label><br>
+                <label class="required" class="required" for="birthday">Date of Birth:</label><br>
                 <input type="date" id="birthday" name="birthday" max='2000-13-13' 
                 pattern="([0-9]{2})\/([0-9]{2})\/([0-9]{4})" required><br>
                 <div class="error"></div>
             </div><br>
 
             <div class="input-control">
-                <label for="country">Country: </label> <br>
+                <label class="required" for="country">Country: </label> <br>
                 <select name="country" id="country">
                     <option value="Afganistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -353,7 +353,7 @@
             <br>
 
             <div class="input-control">
-                <label for="phone">Phone number:</label><br>
+                <label class="required" for="phone">Phone number:</label><br>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="123-456-7890" list='phones' maxlength="15">
                 <div class="error"></div>
@@ -371,7 +371,7 @@
             </div><br>
 
             <div class="input-control">
-                <label for="address">Charging Address</label><br>
+                <label class="required" for="address">Charging Address</label><br>
                 <input type="address" placeholder="Charging Address" name="payment-address" id="payment-address"> 
                 <br>
                 <div class="error"></div>
