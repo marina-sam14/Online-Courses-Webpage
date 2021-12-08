@@ -417,6 +417,11 @@ and outside from the picture.  */
     
 }
 
+.required::after {
+    content: ' *';
+    color: red;
+}
+
 .input-control {
     display: flex;
     flex-direction: column;
@@ -444,7 +449,7 @@ and outside from the picture.  */
 
 .input-control .error {
     color: #ff3860;
-    font-size: 9px;
+    font-size: 14px;
     height: 13px;
 }
 
@@ -474,18 +479,6 @@ and outside from the picture.  */
 
 img {
     max-width: 100%;
-}
-
-
-/* validation */
-.error {
-    border-color: red;
-}
-
-.error-message {
-    color: red;
-    font-style: italic;
-    margin-top: 1em;
 }
 
 /* CSS Grid */

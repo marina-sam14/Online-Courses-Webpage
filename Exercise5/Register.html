@@ -61,12 +61,12 @@
             <br>
 
             <div class="input-control">
-                <label for="name">Name</label><br>
+                <label class="required" for="name">Name</label><br>
                 <input type="text" placeholder="Enter name" id="name" name="name" list='names' pattern="[A-Za-z]+"
                     required autofocus> <br>
                 <div class="error"></div>
             </div>
-<br>
+            <br>
 
             <datalist id="names">
                 <option value="xyz"></option>
@@ -76,7 +76,7 @@
             </datalist>
 
             <div class="input-control">
-                <label for="surname">Surname</label><br>
+                <label class="required" for="surname">Surname</label><br>
                 <input type="text" placeholder="Enter surname" id="surname" name="surname" list='surnames'
                     pattern="[A-Za-z]+" required><br>
                 <div class="error"></div>
@@ -91,7 +91,7 @@
 
 
             <div class="input-control">
-                <label for="birthday">Date of Birth:</label><br>
+                <label class="required" for="birthday">Date of Birth:</label><br>
                 <input type="date" id="birthday" name="birthday" max='2000-13-13' 
                 pattern="([0-9]{2})\/([0-9]{2})\/([0-9]{4})" required><br>
                 <div class="error"></div>
@@ -355,7 +355,7 @@
             <div class="input-control">
                 <label for="phone">Phone number:</label><br>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder="123-456-7890" list='phones' maxlength="15" required>
+                    placeholder="123-456-7890" list='phones' maxlength="15">
                 <div class="error"></div>
             </div><br>
 
@@ -365,29 +365,29 @@
             </datalist>
 
             <div class="input-control">
-                <label for="payment">Card Number</label><br>
-                <input type="number" placeholder="Credit Card Number" name="payment-card" id="payment-card">
+                <label class="required" for="payment">Card Number</label><br>
+                <input type="number" placeholder="Credit Card Number" name="payment-card" id="payment-card" required>
                 <div class="error"></div>
             </div><br>
 
             <div class="input-control">
                 <label for="address">Charging Address</label><br>
-                <input type="address" placeholder="Charging Address" name="payment-address" id="payment-address"
-                    required> <br>
+                <input type="address" placeholder="Charging Address" name="payment-address" id="payment-address"> 
+                <br>
                 <div class="error"></div>
             </div><br>
 
 
 
             <div class="input-control">
-                <label for="username">Username</label><br>
-                <input type="text" placeholder="Enter Username" id="username" name="username">
+                <label class="required" for="username">Username</label><br>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required>
                 <div class="error"></div>
             </div><br>
 
             <div class="input-control">
-                <label for="email">Email</label><br>
-                <input type="text" placeholder="Enter valid email" id="email" name="email" list='mails'>
+                <label class="required" for="email">Email</label><br>
+                <input type="text" placeholder="Enter valid email" id="email" name="email" list='mails' required>
                 <div class="error"></div>
             </div><br>
             <datalist id="mails">
@@ -397,16 +397,16 @@
 
             <div class="input-control">
 
-                <label for="password">Password</label><br>
-                <input type="password" placeholder="Enter Password" id="password" name="password"><br>
+                <label class="required" for="password">Password</label><br>
+                <input type="password" placeholder="Enter Password" id="password" name="password" required><br>
                 <div class="error"></div>
             </div>
             <br>
 
             <div class="input-control">
 
-                <label for="password-repeat">Repeat Password</label><br>
-                <input type="password" placeholder="Repeat Password" name="passwordrepeat" id="password-repeat">
+                <label class="required" for="password-repeat">Repeat Password</label><br>
+                <input type="password" placeholder="Repeat Password" name="passwordrepeat" id="password-repeat" required>
                 <br>
                 <div class="error"></div>
             </div>
