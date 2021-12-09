@@ -120,11 +120,10 @@ h3 {
     padding-bottom: 4.5em;
 }
 
+/* Main Content appearance */
 .main {
     width: 100%;
-    /* margin: 5em;
-    margin-left: 5em;
-    margin-right: 5em; */
+   
 }
 
 /* Specific section where is our welcoming message written in italic. */
@@ -194,10 +193,6 @@ dd ul li {
     
 }
 
-/* .main ul {
-    margin: 8px;
-} */
-
 
 
 /* Form. The font of all fields is Roboto and the size is 12pt.*/
@@ -208,10 +203,6 @@ form {
     font-size: 12pt;
 
 }
-
-
-
-
 
 
 /* The upload field is the only field in the form without border. */
@@ -232,8 +223,9 @@ textarea {
     
 }
 
+/* Specific textarea in the ContactUs form */
 #comment {
-    /* height: 240px; */
+   
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -245,6 +237,7 @@ textarea {
     resize: none;
 }
 
+/* Selector in ContactUs field */
 #country {
     padding: 16px;
     width: 100%;
@@ -296,6 +289,7 @@ article > h2 + p   {
     font-size: 10pt;
 }
 
+/* Fonts in AboutUs */
 .cv {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14pt;
@@ -304,17 +298,16 @@ article > h2 + p   {
    
 }
 
-#details {
+/* Details in AboutUs */
+#personal_details {
     margin: 2em;
 }
 
+/* Different version of responsive pictures in Subject_Areas */
 .subj_areas {
     margin: 2em;
 }
 
-/* .reg_img {
-    text-align: center;  
-} */
 
 /* Login and Register Avatars are static because we wanted for them not to be 
 affected by the top, bottom, left, and right properties */
@@ -329,6 +322,7 @@ affected by the top, bottom, left, and right properties */
     text-align: center;
 }
 
+/* Titles in SUbject_Areas */
 span {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14pt;
@@ -348,6 +342,7 @@ legend {
     
 }
 
+/* Details in Registration Form */
 details {
     flex: 10;
     display: flex;
@@ -356,6 +351,7 @@ details {
 }
 
 
+/* Title of the details field */
 details summary{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13pt;
@@ -367,9 +363,11 @@ details summary{
 
 /* Fieldset in Questionnaire and CV */
 fieldset {
-    min-width: 100%
+    min-width: 100%;
+    border-radius: 40px;
 }
 
+/* Fonts in fieldset */
 fieldset ol li p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13pt;
@@ -389,16 +387,6 @@ fieldset ul li p {
     font-weight: bold;
 }
 
-fieldset input {
-    border: 3px solid #555;
-    border-radius:8px;
-}
-
-
-fieldset {
-    border-radius: 40px;
-}
-
 fieldset ul li p label {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12pt;
@@ -406,11 +394,14 @@ fieldset ul li p label {
 
 }
 
-#country {
-    border-width: 3px;
-    border-radius: 5px;
+/* Field style */
+fieldset input {
+    border: 3px solid #555;
+    border-radius:8px;
 }
 
+
+/* Submit button */
 .submit {
     border-radius: 25px;
 }
@@ -427,11 +418,15 @@ and outside from the picture.  */
     
 }
 
+/* Every required field in Registration Form has a red * next to its name. */
 .required::after {
     content: ' *';
     color: red;
 }
 
+
+/* Classes created for the Refistration Validation.
+Every field is a child of input-control class. */
 .input-control {
     display: flex;
     flex-direction: column;
@@ -447,17 +442,19 @@ and outside from the picture.  */
 }
 
 
+/* Successful field completion */
 .input-control.success input {
     border-color:var(--success);
 }
 
+/* Unsuccesful field completion error */
 .input-control.error input {
     border-color: var(--error);
     font-family: 'Courier New', Courier, monospace;
     font-size: 12pt;
 }
 
-/* Class using for javascript errors */
+/* The incompleted field turns red */
 .input-control .error {
     color:var(--error);
     font-size: 14px;
@@ -482,6 +479,7 @@ and outside from the picture.  */
     padding: 0 40px;
   }
   
+  /* Classes for the main picture in Index page */
   .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -506,6 +504,7 @@ img {
     'footer';
 }
 
+/* Each position */
 header {
     grid-area: header;
     
@@ -538,11 +537,6 @@ footer {
 
 }
 
-@media only screen and (max-width: 535px) {
-    #desk{
-        display: none;
-    }
-}
 
 
 /* Tablet */
@@ -559,6 +553,7 @@ footer {
         justify-content: space-between;
     }
     
+    /* Each position */
     .menu{
         width: 100%;
         grid-column: 1 / 2;
@@ -593,6 +588,7 @@ footer {
        
     }
 
+    /* Each position */
     header {
        
         grid-column: 1 / 4;
@@ -630,6 +626,7 @@ footer {
       }
     
 }
+
 
 /* CSS Flexbox */
 /* Flex area in the main menu bar where the menu bar is located. 
