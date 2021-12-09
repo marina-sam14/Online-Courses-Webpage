@@ -2,19 +2,19 @@ console.log("Validation started.");
 const form = document.getElementById('form');
 
 window.onload = function(){
-    console.log("JS file loaded")
-}
+    console.log("JS file loaded");
+};
 
 
 
 
-const birthDate = document.querySelector("#birthday")
-const Email = document.querySelector("#email")
-const userName = document.querySelector("#username")
-const password1 = document.querySelector("#password")
-const password2 = document.querySelector("#password-repeat")
+const birthDate = document.querySelector("#birthday");
+const Email = document.querySelector("#email");
+const userName = document.querySelector("#username");
+const password1 = document.querySelector("#password");
+const password2 = document.querySelector("#password-repeat");
 const paymentCard = document.querySelector("#payment-card")
-
+;
 
 
 form.addEventListener('submit', e => {
@@ -30,7 +30,7 @@ const setError =(element,message) => {
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
-}
+};
 
 const setSuccess =(element) => {
     const inputControl = element.parentElement;
@@ -39,12 +39,12 @@ const setSuccess =(element) => {
     errorDisplay.innerText = " ";
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-}
+};
 
 const isValidEmail = Email => {
     const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regex.test(String(Email).toLowerCase());
-}
+};
 
 birthDate.max = new Date().toISOString().split("T")[0];
 
@@ -60,7 +60,7 @@ const validateInputs = () => {
         setError(userName, 'Please enter your username');
     }
     else if (usernameValue.length < 8){
-        setError(userName,"Username must be at least 8 characters!")
+        setError(userName,"Username must be at least 8 characters!");
     } 
     else {
         setSuccess(userName);
