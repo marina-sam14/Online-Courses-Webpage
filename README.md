@@ -1,4 +1,4 @@
-# University Project about HTML/CSS/JavaScript
+# University Project about creating a Web Page from the scratch using HTML/CSS/JavaScript
 
  - 1st Exercise: HTML Skeleton and Content
  - 2nd Exercise: CSS 
