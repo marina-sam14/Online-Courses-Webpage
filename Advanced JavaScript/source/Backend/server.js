@@ -3,11 +3,6 @@ const express = require("express");
 const app = express();
 const path = require('path');
 
-
-
-const Register = require("./models/register")
-
-
 const port = process.env.port || 3000;
 
 
@@ -29,34 +24,34 @@ app.get("/register", (req, res) => {
 app.post('/register', async (req, res) => {
     
 
-    try {
-        const password = req.body.password;
-        const cpassword = req.body.conf_password;
+    // try {
+    //     const password = req.body.password;
+    //     const cpassword = req.body.conf_password;
 
-        if (password === cpassword) {
-            const registerUser = new Register({
-                name=req.body.name,
-                surname=req.body.surname,
-                phone=req.body.phone,
-                address=req.body.address,
-                country=req.body.country,
-                email=req.body.email,
-                username=req.body.username,
-                password=password,
-                conf_password=conf_password
-            })
+    //     if (password === cpassword) {
+    //         const registerUser = new Register({
+    //             name=req.body.name,
+    //             surname=req.body.surname,
+    //             phone=req.body.phone,
+    //             address=req.body.address,
+    //             country=req.body.country,
+    //             email=req.body.email,
+    //             username=req.body.username,
+    //             password=password,
+    //             conf_password=conf_password
+    //         })
 
-            const registered = await registerUser.save();
-            res.status(201).render("index");
-        } 
-        else {
-            res.send("Password don't match.");
-        }
+    //         const registered = await registerUser.save();
+    //         res.status(201).render("index");
+    //     } 
+    //     else {
+    //         res.send("Password don't match.");
+    //     }
 
-    }
-    catch (error) {
-        res.status(400).send(error);
-    }
+    // }
+    // catch (error) {
+    //     res.status(400).send(error);
+    // }
 
 
 })
